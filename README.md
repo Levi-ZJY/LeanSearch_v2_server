@@ -34,8 +34,7 @@ AUTH = ("leansearch", "x4xDV5PPtRokKXrG6OdL0rGd")
 r = requests.post(
     f"{URL}/search",
     auth=AUTH,
-    json={"query": ["the order of a group element divides the order of the group"],
-          "num_results": 10},
+    json={"query": ["the order of a group element divides the order of the group"], "num_results": 10},
     timeout=120,
 )
 
