@@ -18,26 +18,19 @@ CURL：
 
 ```
 curl -u leansearch:x4xDV5PPtRokKXrG6OdL0rGd \
-  -X POST https://causing-usage-disclaimer-still.trycloudflare.com/search \
+  -X POST https://kingdom-girls-plugin-smart.trycloudflare.com/search \
   -H 'Content-Type: application/json' \
   -d '{"query": ["the order of a group element divides the order of the group"], "num_results": 10}'
 ```
 
 Python:
 ```
-import requests
-import json
-
-URL = "https://causing-usage-disclaimer-still.trycloudflare.com"
+import requests, json
+URL = "https://kingdom-girls-plugin-smart.trycloudflare.com"
 AUTH = ("leansearch", "x4xDV5PPtRokKXrG6OdL0rGd")
-
-r = requests.post(
-    f"{URL}/search",
-    auth=AUTH,
+r = requests.post(f"{URL}/search", auth=AUTH,
     json={"query": ["the order of a group element divides the order of the group"], "num_results": 10},
-    timeout=120,
-)
-
+    timeout=120)
 print(json.dumps(r.json(), indent=2, ensure_ascii=False))
 ```
 
